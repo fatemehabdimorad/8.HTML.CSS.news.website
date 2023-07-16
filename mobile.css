@@ -1,0 +1,75 @@
+/* navbar */
+#navbar .container {
+  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+#navbar .container .logo {
+  width: 120px;
+  height: auto;
+}
+#navbar .container .social {
+  display: none;
+}
+#navbar .container ul li a {
+  padding: 0.5rem;
+}
+
+/* . */
+/* Showcase */
+#showcase .showcase-container {
+  grid-template-columns: 1fr;
+}
+#showcase .showcase-container .showcase-content {
+  text-align: center;
+}
+/* . */
+/* * home-article */
+
+#home-article .article-container {
+  grid-template-columns: 1fr;
+}
+#home-article .article-container > *:last-child,
+#home-article .article-container > *:first-child {
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+/* . */
+/* * Footer */
+#main-footer .footer-container {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+}
+#main-footer .footer-container #logo-column {
+  display: none;
+}
+#main-footer .links {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+#main-footer .footer-container .touch {
+  grid-column: 2 / span 1;
+}
+#main-footer .footer-container .join {
+  display: none;
+}
+#main-footer .links {
+  margin-left: 0;
+}
+/*  About*/
+#about,
+#article,
+.container {
+  margin: 0;
+  padding: 0;
+}
+.page-container {
+  grid-template-columns: 1fr;
+}
+
+.page-container .card-1,
+.page-container .card-2,
+.page-container .card-3 {
+  grid-column: 1;
+}
